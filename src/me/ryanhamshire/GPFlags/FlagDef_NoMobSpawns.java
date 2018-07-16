@@ -18,7 +18,6 @@ public class FlagDef_NoMobSpawns extends FlagDefinition
         
         EntityType type = event.getEntityType();
         if(type == EntityType.PLAYER) return;
-        if(type == EntityType.ARMOR_STAND) return;
         
         SpawnReason reason = event.getSpawnReason();
         if(reason == SpawnReason.SPAWNER || reason == SpawnReason.SPAWNER_EGG) return;
